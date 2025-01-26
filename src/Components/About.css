@@ -1,0 +1,92 @@
+/* About.css */
+.About {
+    padding: 2rem;
+    background-color: #fbeeee; /* Light background for contrast */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    height: calc(100vh - 6.5rem);
+    width: 100vw;
+
+
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #4a90e2; /* Primary color for heading */
+  }
+  
+  .frontend, .BackEnd, .MachineLearning {
+    margin-bottom: 1rem; /* Add spacing between sections */
+    background:linear-gradient(to right , rgb(251, 216, 216) 30% ,rgb(239, 239, 243) 50%);
+    border: 1px solid #ddd;
+    height:20vh;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .frontend:hover, .BackEnd:hover, .MachineLearning:hover {
+    background:linear-gradient(to right , rgb(239, 239, 243) 30% ,rgb(251, 216, 216) 50%);
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .secondheading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .About {
+      padding: 1rem;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .secondheading {
+      font-size: 1.5rem;
+    }
+  
+    .paragraph {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+    .heading {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+  
+    .secondheading {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .paragraph {
+      line-height: 1;
+      font-size: 0.7rem;
+      
+    }
+   
+}
