@@ -1,0 +1,259 @@
+/* ProjectSec.css */
+.ProjectSec {
+    padding: 2rem 2rem;
+    background-color: #efe6e6; /* Soft background color */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    height: calc(100vh - 6.5rem);
+    width: 100vw;
+   
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1d3557; /* Deep blue for emphasis */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .main {
+    display: flex;
+    gap: 2rem;
+    justify-content:space-evenly;
+    
+    
+  }
+  .prev,
+   .next {
+    display: none;
+  }
+  
+  
+  .Project {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 100%;
+    max-height: 65vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Project:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #457b9d; /* Complementary blue tone */
+  }
+  
+  .projectimage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Description {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .Skillset {
+    font-size: 1rem;
+    color: #fcfbfb;
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #503f0eac;
+    border-radius: 20px;
+  }
+
+
+  .ull{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem 0.5rem;
+  }
+
+  
+  
+  .Skillset::before {
+    color: #1d3557; /* Primary color */
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive Design */
+ 
+   
+  @media (max-width: 768px) {
+    .ProjectSec{
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+    }
+    .main {
+      display: flex;
+      overflow: hidden;
+      transition: transform 0.5 ease-in-out;
+      width: 222%;
+        flex-direction:row;
+        align-items: center;
+      
+    }
+   .Project{
+      display: flex;
+      align-items: center;
+      width:45%;
+      
+   }
+   .slider1{
+    transform: translateX(-117%);
+   }
+   .slider2{
+    transform: translateX(-4%);
+   }
+   .pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20%;
+   }
+   .prev,
+   .next {
+       display:flex;
+       flex-direction: row;
+       background-color: rgba(0, 0, 0, 0.5);
+       color: white;
+       border: none;
+       font-size: 0.5rem;
+       cursor: pointer;
+       padding: 3% 3%;
+       border-radius: 10%;
+     
+   }
+   
+   .prev {
+       left: 40%;
+   }
+   
+   .next {
+       right: 40%;
+   }
+   
+   .prev:hover,
+   .next:hover {
+       background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   
+    .ull{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem 1rem;
+     }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .ProjectSec{
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+    }
+    .main {
+      display: flex;
+      overflow: hidden;
+      transition: transform 0.5 ease-in-out;
+      width: 222%;
+        flex-direction:row;
+        align-items: center;
+      
+    }
+   .Project{
+      display: flex;
+      align-items: center;
+      width:45%;
+      
+   }
+   .slider1{
+    transform: translateX(-117%);
+   }
+   .slider2{
+    transform: translateX(-4%);
+   }
+   .prev,
+   .next {
+       display:flex; 
+       background-color: rgba(0, 0, 0, 0.5);
+       color: white;
+       border: none;
+       font-size: 0.5rem;
+       cursor: pointer;
+       padding: 3% 3%;
+       border-radius: 10%;
+     
+   }
+   
+   .prev {
+       left: 40%;
+   }
+   
+   .next {
+       right: 40%;
+   }
+   
+   .prev:hover,
+   .next:hover {
+       background-color: rgba(0, 0, 0, 0.8);
+   }
+
+   
+    .ull{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem 1rem;
+     }
+
+
+    .heading {
+      font-size: 2rem;
+      
+    }
+  
+    .Title {
+      font-size: 1.3rem;
+    }
+  
+    .Description {
+      font-size: 1.2rem;
+    }
+  
+    .Skillset {
+      font-size: 0.9rem;
+    }
+   
+   
+    
+  }

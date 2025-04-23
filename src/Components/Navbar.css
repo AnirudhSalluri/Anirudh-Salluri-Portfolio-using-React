@@ -1,0 +1,153 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 6rem;
+    position: sticky;
+    width: 100vw;
+    height: 6.5rem;
+    top: 0;
+    z-index: 5;
+  }
+  
+  .Navbar .icon img {
+    object-fit: cover;
+    height:4.5rem;
+    filter: sepia(1) saturate(5) hue-rotate(45deg) brightness(6);
+
+   
+  }
+  .linkscon{
+    display: none;
+  }
+
+
+  .menubtn{
+    display: none;
+  }
+  
+  .Navbar .btns {
+    display: flex;
+    gap: 20px;
+   
+    
+  }
+  
+  .Navbar .links {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .Navbar .links:hover {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+  }
+  
+  .Navbar .contact {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+    padding: 18px 18px;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+  .menubtn{
+    font-size: 4rem;
+  }
+  
+  .Navbar .contact:hover {
+    color: #f6f6f6;
+    background-color: rgb(12, 12, 12);
+  }
+
+   /*Responsive Design*/ 
+@media (max-width: 768px) {
+      .Navbar {
+       display: flex;
+       flex-direction: row;
+      }
+    
+  
+    .Navbar .btns {
+      gap: 15px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .Navbar .links {
+      font-size: 16px;
+      padding: 1px;
+    }
+  
+    .Navbar .contact {
+      margin-top: 20px;
+      font-size: 12px;
+      padding: 5px 5px;
+    }
+    .linkscon{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Navbar .btns{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 22rem;
+      
+    }
+    .Navbar .openmenu{
+        display: none;
+    }
+
+    .menubtn{
+      display: inline;
+      margin-bottom: 1rem;
+      position:absolute;
+      right: 2%;
+      top:10%
+    }
+
+    .Navbar .icon img {
+      width: 4.5rem;
+      height: auto;
+    }
+    .linkscon{
+      display: inline;
+      font-size: 20px;
+      border-radius: 10%;
+      color: #ecece9cf;
+      background-color: rgb(1, 12, 22);
+      padding: 0.4rem 0.4rem;
+    }
+  
+    .Navbar .links {
+      font-size: 20px;
+      border-radius: 10%;
+      color: #ecece9cf;
+      background-color: rgb(1, 12, 22);
+      padding: 0.4rem 0.4rem;
+      
+    }
+  
+    .Navbar .contact {
+      font-size: 16px;
+      display:none;
+
+    }
+  }
+    
+  
